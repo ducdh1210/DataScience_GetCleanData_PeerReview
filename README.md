@@ -13,3 +13,6 @@ Coursera (Data Science, Class 3)
 
 ###Main Step
 
+####Step 1:
+
+
