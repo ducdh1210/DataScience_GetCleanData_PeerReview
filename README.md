@@ -1,7 +1,4 @@
-##Coursera: Data science
-## Class 3: Get and clean data
-## Course Project (Peer Review)
-
+## Data science - Get and clean data - Course Project
 
 ###Review from instructor's instructions:
 
@@ -15,8 +12,6 @@ You should create one R script called run_analysis.R that does the following.
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive activity names. 
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-
-====================================
 
 ###Installation and Run
 
