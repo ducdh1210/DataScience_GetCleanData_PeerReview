@@ -1,4 +1,5 @@
-## Data science - Get and clean data - Course Project
+## Get and clean data - Course Project
+Coursera (Data Science, Class 3)
 
 ###Review from instructor's instructions:
 
