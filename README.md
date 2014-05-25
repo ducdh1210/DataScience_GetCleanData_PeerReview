@@ -1,5 +1,5 @@
-## Get and clean data - Course Project
 Coursera (Data Science, Class 3)
+## Get and clean data - Course Project
 
 ###Review from instructor's instructions:
 
