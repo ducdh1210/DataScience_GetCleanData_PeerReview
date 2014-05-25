@@ -17,12 +17,12 @@ Prefix of each variable is the abbreviation of its data type. For example, the d
 
 ###Main Steps and Explaination
 
-####Step 1: Download and unzip the files
+####STEP 1: Download and unzip the files
 * Download the file using download.file(...)
 * Unzip the file using unzip(...)
 * Note: since the file is quite big, if you already downloaded it and unzip it upfront, please put the folder "UCI HAR Dataset" into the working directory so that you can skip this time-consuming step
 
-####Step 2: Create tables from .txt files
+####STEP 2: Create tables from .txt files
 * Using read.table(...), I create several data.frame variables from given downloaded text files
 
 ####STEP 3: Combine several tables 
