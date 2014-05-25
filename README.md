@@ -1,8 +1,10 @@
-Coursera: Data science
-Class 3: Get and clean data
-Course Project (Peer Review)
+##Coursera: Data science
+##Class 3: Get and clean data
+###Course Project (Peer Review)
+ 
 ====================================
-Review from instructor's instructions:
+
+###Review from instructor's instructions:
 
 Here are the data for the project: 
 
@@ -16,7 +18,8 @@ You should create one R script called run_analysis.R that does the following.
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 ====================================
-#Installation and Run
+
+###Installation and Run
 
 * Please clone this repository to your prefered directory in your machine
 * Open RStudio, set working directory to the directory from the above step (in RStudio, go to Session -> Set Working Directory )
