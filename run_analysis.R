@@ -5,7 +5,7 @@
 # May 24, 2014                                               #
 ##############################################################
 
-#setwd("~/Desktop/Coursera/Data_Science_PR/CleanData_PeerReview")
+#install.packages("data.table")
 
 ##############################################################
 # STEP 1: Download and unzip files
