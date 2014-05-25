@@ -1,6 +1,6 @@
 ##Coursera: Data science
-##Class 3: Get and clean data
-###Course Project (Peer Review)
+## Class 3: Get and clean data
+## Course Project (Peer Review)
  
 ====================================
 
