@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Get and clean data - Course Project</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<p>Coursera (Data Science, Class 3)</p>
+
+<h2>Get and clean data - Course Project</h2>
+
+<p>###Installation and Run</p>
+
+<ul>
+<li>Please clone this repository to your prefered directory in your machine</li>
+<li>Open RStudio, set working directory to the directory from the above step (in RStudio, go to Session -&gt; Set Working Directory )</li>
+<li>Now you should see the file run_analysis.R. Run all the codes</li>
+<li>If you have not installed package &ldquo;data.table&rdquo;, please uncomment the code at line number 8</li>
+<li>It will around 2-3 minutes to download the dataset and run the codes. It is not required, but recommended that you have a cup of coffee while waiting</li>
+<li>Run the code</li>
+<li>If succesfully completed, you should see a new file named tidy_data.txt</li>
+</ul>
+
+<p>###Coding convention:</p>
+
+<p>Prefix of each variable is the abbreviation of its data type. For example, the df_ in df_features tell you that the variable is a data frame</p>
+
+<p>###Main Step</p>
+
+<p>####Step 1: Download and unzip the files</p>
+
+<ul>
+<li>Download the file using download.file(&hellip;)</li>
+<li>Unzip the file using unzip(&hellip;)</li>
+<li>Note: since the file is quite big, if you already downloaded it and unzip it upfront, please put the folder &ldquo;UCI HAR Dataset&rdquo; into the working directory so that you can skip this time-consuming step</li>
+</ul>
+
+<p>####Step 2: Create tables from .txt files</p>
+
+<ul>
+<li>Using read.table(&hellip;), I create several data.frame variables from given downloaded text files</li>
+</ul>
+
+<p>####STEP 3: Combine several tables </p>
+
+<ul>
+<li>Create table of all subjects (df_subject)  by combining subject train and subject test tables (10299 obs of 1 variable)</li>
+<li>Create table of all data set (df_x) by combing train set (from X_train.txt) and test set (X_Test.txt) (10299 obs of 66 variables)</li>
+<li>Create table of all data labels (df_y) by combing train labels (from y_train.txt) and test labels (y_test.txt) (10299 obs of 1 variables)</li>
+<li>in df_y, convert numeric value to activity name using activity_labels.txt</li>
+</ul>
+
+<p>####STEP 4: from feature table, get and clean feature labels relating to mean and std
+Note: At step 2, I created df_feature table from features.txt. Now, I want to keep the indexes of row whose value is the word &ldquo;mean&rdquo; and &ldquo;std&rdquo;&ldquo; in it</p>
+
+<ul>
+<li>Obtain df_feature[,2], which is a factor. Call it ft_feature</li>
+<li>Using regular expression, create a vector whose each element is the index of the row referring to a mean measurement label</li>
+<li>Using regular expression, create a vector whose each element is the index of the row referring to a std measurement label</li>
+<li>Create a vector by combining two above vectors, then sort the new vector. Call it vt_col</li>
+</ul>
+
+<p>####STEP 5: from feature table, get and clean feature labels relating to mean and std</p>
+
+</body>
+
+</html>
+

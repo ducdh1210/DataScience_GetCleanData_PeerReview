@@ -84,7 +84,7 @@ colnames(df_General)[3:length(df_General)] <- as.character(ft_feature)
 # load data table package
 library(data.table)
 
-# create data table variabel from df_General
+# create data table dt_General from df_General
 dt_General <- data.table(df_General)
 
 # take all columns except first two, split them by the couple (Subject - Activity), and find mean to each splitted group
