@@ -9,7 +9,6 @@ Coursera (Data Science, Class 3)
 * If you have not installed package "data.table", please uncomment the code at line number 8
 * Run all the codes
 * It will around 2-3 minutes to download the dataset and run the codes. It is not required, but recommended that you have a cup of coffee while waiting
-
 * If succesfully completed, you should see a new file named tidy_data.txt
 
 ###Coding convention
