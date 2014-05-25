@@ -15,7 +15,7 @@ download.file(url,destfile="dataset.zip",method="curl")
 unzip(zipfile="dataset.zip")
 
 ##############################################################
-# STEP 2: Read tables (df_ refers to dataframe)
+# STEP 2: Create tables from .txt files(df_ refers to dataframe)
 
 # read activity labels
 df_activity <- read.table(file="./UCI HAR Dataset/activity_labels.txt")
